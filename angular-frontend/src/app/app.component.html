@@ -1,0 +1,68 @@
+<header>
+
+  <mat-toolbar class="toolbar" color="primary" role="heading">
+    <button mat-button [matMenuTriggerFor]="menu">
+      <i class="material-icons">
+        menu
+      </i>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="home-page" routerLinkActive="active-link">Home</button>
+        <button mat-menu-item routerLink="list-articles" routerLinkActive="active-link">Articles</button>
+        <button mat-menu-item>Contact</button>
+        <button mat-menu-item>About</button>
+      </mat-menu>
+    </button>
+    <a [routerLink]="['/home-page']">
+      <h1 class="header-title">
+        Simple Blog
+      </h1>
+    </a>
+    <span class="spacer"></span>
+    <nav>
+      <a mat-button routerLink="/register">Register</a>
+      <a mat-button routerLink="/login" color *ngIf="!auth.loggedIn">Login</a>
+      <button class="logout-button" mat-flat-button color="warn" (click)="auth.logout()"
+        *ngIf="auth.loggedIn">Logout</button>
+    </nav>
+  </mat-toolbar>
+
+</header>
+
+<div class="admin-panel" *ngIf="auth.loggedIn">
+  <div class="links">
+    <button mat-menu-item routerLink="create" routerLinkActive="active-link">
+      <i class="material-icons">
+        create
+      </i>
+      Create
+    </button>
+    <button mat-menu-item routerLink="update" routerLinkActive="active-link">
+      <i class="material-icons">
+        update
+      </i>
+      Update
+    </button>
+    <button class="delete-menu-link" mat-menu-item routerLink="delete" routerLinkActive="active-link">
+      <i class="material-icons">
+        delete_forever
+      </i>
+      Delete
+    </button>
+  </div>
+  <span>
+    <button mat-button [matMenuTriggerFor]="menu">
+      <i class="material-icons">
+        person
+      </i>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Settings</button>
+      </mat-menu>
+    </button>
+  </span>
+</div>
+
+<router-outlet></router-outlet>
+
+<footer>
+  <div class="copyright text-muted">Copyright &copy; Simple Blog Website 2019</div>
+</footer>

@@ -1,0 +1,36 @@
+<div class="update-articles mat-elevation-z8">
+
+  <table mat-table [dataSource]="this.articleService.dataSource.articles">
+
+    <ng-container matColumnDef="id">
+      <th mat-header-cell class="theader-id" *matHeaderCellDef>Id</th>
+      <td mat-cell *matCellDef="let article">{{article.id}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="title">
+      <th mat-header-cell class="theader-title" *matHeaderCellDef>Title</th>
+      <td mat-cell *matCellDef="let article">{{article.title}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="userId">
+      <th mat-header-cell class="theader-user" *matHeaderCellDef>User id</th>
+      <td mat-cell *matCellDef="let article">{{article.user_id}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="delete">
+      <th mat-header-cell class="theader-delete" *matHeaderCellDef>Update</th>
+      <td mat-cell *matCellDef="let article">
+        <button mat-stroked-button type="submit" color="primary" [routerLink]="['edit-article']">
+          <i class="material-icons">
+            update
+          </i>
+          Update</button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+
+  </table>
+  
+  <mat-paginator #paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" [length]="" showFirstLastButtons></mat-paginator>

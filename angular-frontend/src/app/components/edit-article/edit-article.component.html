@@ -1,0 +1,26 @@
+<div class="form-container">
+
+  <form [formGroup]="this.EditArticleForm" (ngSubmit)="onSubmit()">
+
+    <mat-form-field class="form-field">
+      <mat-label>Title</mat-label>
+      <input matInput type="text" formControlName="title" required>
+    </mat-form-field>
+
+    <mat-form-field class="form-field">
+      <mat-label>Content</mat-label>
+      <textarea matInput formControlName="content" required></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form-field">
+      <mat-label>Article Id</mat-label>
+      <input matInput type="number" formControlName="id" required>
+    </mat-form-field>
+
+    <mat-card-actions>
+      <button mat-flat-button color="primary" type="submit" [disabled]="!EditArticleForm.valid">Submit</button>
+    </mat-card-actions>
+
+  </form>
+
+</div>

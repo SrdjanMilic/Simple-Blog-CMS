@@ -1,0 +1,14 @@
+<div class="read-one-article">
+  <mat-list role="list" *ngFor="let article of articleService.dataSource.articles">
+    <mat-list-item role="listitem">
+      <div class="article-title">
+        <h3>{{article.title}}</h3>
+        <span class="article-user-id">user: {{article.user_id}}</span>
+      </div>
+    </mat-list-item>
+    <mat-list-item role="listitem">
+      {{article.content}}
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list>
+</div>

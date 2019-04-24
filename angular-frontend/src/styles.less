@@ -1,0 +1,161 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+@base-color: #3F51B5;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: #212121;
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: @base-color;
+  }
+}
+
+table {
+  width: 100%;
+
+  .theader-id {
+    width: 50px;
+  }
+
+  .theader-title {
+    width: auto;
+  }
+
+  .theader-user {
+    min-width: 40px;
+  }
+
+  .theader-delete {
+    width: 72px;
+  }
+}
+
+header {
+  position: relative;
+
+  .toolbar {
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2),
+      0 6px 10px 0 rgba(0, 0, 0, .14),
+      0 1px 18px 0 rgba(0, 0, 0, .12);
+
+    .header-title {
+      a {
+        display: flex;
+        align-items: center;
+
+        i {
+          font-size: 152%;
+          margin-right: 4px;
+        }
+
+        h2 {
+          font-size: 135%;
+        }
+      }
+    }
+
+    i,
+    a {
+      color: #fff;
+
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+// Global width properties
+.list-articles,
+.delete-articles,
+.update-articles,
+.read-one-article,
+main {
+  max-width: 980px;
+  margin: 3% auto;
+}
+
+.article-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+
+  span {
+    font-size: 70%;
+  }
+}
+
+.mat-list-base .mat-list-item {
+  height: auto !important; // material design fix
+  padding: auto 16px !important;
+}
+
+.mat-divider {
+  margin-top: 28px !important;
+}
+
+// Material table shadow disable
+.mat-elevation-z8 {
+  box-shadow: none;
+}
+
+.form-container {
+  border: 1px solid rgba(0, 0, 0, .03);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .24),
+    0 0 2px rgba(0, 0, 0, .12);
+
+
+  .form-title {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  form {
+    padding: 20px;
+
+    .form-field {
+      width: 100%;
+      margin: 5px 0;
+    }
+
+    .form-right-align {
+      text-align: right;
+    }
+
+    input.form-right-align::-webkit-outer-spin-button,
+    input.form-right-align::-webkit-inner-spin-button {
+      display: none;
+    }
+
+    input.form-right-align {
+      -moz-appearance: textfield;
+    }
+  }
+}
