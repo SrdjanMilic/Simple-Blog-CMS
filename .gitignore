@@ -1,6 +1,8 @@
-
 readme.txt
+.directory
 angular-frontend/node_modules
 angular-frontend/notes.txt
+angular-frontend/.directory
 nodejs-server/node_modules
 nodejs-server/notes.txt
+nodejs-server/.directory
