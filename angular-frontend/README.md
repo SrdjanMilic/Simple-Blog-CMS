@@ -47,7 +47,7 @@ Register page html, less and page logic files
 - ../angular-frontend/src/app/services  
 Articles logic services for CRUD operations, pagination, material snack bar...
 
-Other files:  
+Other files are pretty much self-explanatory:  
 
 ../angular-frontend/src/app/app.component.html,  
 ../angular-frontend/src/app/app.component.less,  
@@ -55,5 +55,3 @@ Other files:
 ../angular-frontend/src/app/app.module.ts,  
 ../angular-frontend/src/index.html,  
 ../angular-frontend/src/styles.less,  
-
-are pretty much self-explanatory files
