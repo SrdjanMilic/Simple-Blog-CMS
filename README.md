@@ -2,7 +2,7 @@
 
 Blog CMS with basic features build with Angular 2 for front-end, material design for UI, Node.js with express framework for server side.
 
-## Requirements
+## Requirements and usage
 
 Required: Node.js with npm
 

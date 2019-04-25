@@ -27,5 +27,3 @@ curl -i -X GET http://localhost:3000/api/v1/read-article/1
 
 - Find articles by user name(user_id) in articles table  
 curl -i -X GET http://localhost:3000/api/v1/find-articles/1
-
-Of course, you can change the values as you wish to.
