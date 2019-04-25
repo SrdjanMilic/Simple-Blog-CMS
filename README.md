@@ -1,10 +1,8 @@
 # Simple blog CMS
 
-## Description
-
 Blog CMS with basic features. It's build with Angular 2 for front-end, material design for UI, Node.js with express framework for server side.
 
-## Requirements
+## Requirements and usage
 
 Node.js with npm
 
@@ -41,8 +39,7 @@ alternatively:
 
 ### Installation on OS Windows 10
 
-Download and install Node.js with npm  
-https://nodejs.org/en/download/
+Download and install Node.js with npm from: https://nodejs.org/en/download/
 
 #### Windows Node server back-end initialization
 
@@ -102,7 +99,7 @@ alternatively: ng serve --open (starts angular server and open tab in browser)
 - JWT authorization
 - material design
 
-## DOWNFALLS
+### DOWNFALLS
 
 - there is no working pagination yet
 - there is no file up-loader for images
@@ -115,7 +112,7 @@ alternatively: ng serve --open (starts angular server and open tab in browser)
 
 This downfalls will be sorted out eventually.
 
-## SYSTEM Info
+### SYSTEM Info
 
 **Developed on:**  
 
