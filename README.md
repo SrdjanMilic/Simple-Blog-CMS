@@ -2,7 +2,7 @@
 
 Blog CMS with basic features build with Angular 2 for front-end, material design for UI, Node.js with express framework for server side.
 
-## Requirements and usage
+## Requirements
 
 Required: Node.js with npm
 
@@ -99,7 +99,7 @@ alternatively: ng serve --open (starts angular server and open tab in browser)
 - JWT authorization
 - material design
 
-## DOWNFALLS
+## Downfalls
 
 - there is no working pagination yet
 - there is no file up-loader for images
@@ -112,7 +112,7 @@ alternatively: ng serve --open (starts angular server and open tab in browser)
 
 This downfalls will be sorted out eventually.
 
-## SYSTEM Info
+## System Info
 
 **Developed on:**  
 
