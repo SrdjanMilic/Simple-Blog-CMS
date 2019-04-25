@@ -2,7 +2,11 @@
   "name": "angular-frontend",
   "version": "1.0.0",
   "description": "Angular 2 Blog CMS front-end with material design UI",
-  "keywords": ["angular", "cms", "material"],
+  "keywords": [
+    "angular",
+    "cms",
+    "material"
+  ],
   "readme": "README.md",
   "repository": {
     "type": "git",
@@ -23,7 +27,7 @@
     "@angular/animations": "^7.2.13",
     "@angular/cdk": "^7.3.7",
     "@angular/common": "~7.2.0",
-    "@angular/compiler": "^7.2.13",
+    "@angular/compiler": "^7.2.14",
     "@angular/core": "~7.2.0",
     "@angular/forms": "~7.2.0",
     "@angular/material": "^7.3.7",
@@ -39,7 +43,7 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.13.8",
     "@angular/cli": "^7.2.3",
-    "@angular/compiler-cli": "^7.2.6",
+    "@angular/compiler-cli": "^7.2.14",
     "@angular/language-service": "~7.2.0",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
