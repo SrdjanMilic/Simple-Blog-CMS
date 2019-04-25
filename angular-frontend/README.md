@@ -1,6 +1,8 @@
 # Simple blog CMS - Angular frontend
 
-**Directory structure:**
+Simple blog CMS Angular 2 front-end with material design UI.
+
+**Directory and files structure:**
 
 - ../angular-frontend/src/app/auth/auth.guard.ts  
 Authentication service (guard route): You can't reach for example url "http://localhost:4200/delete" if you are not logged in.
@@ -45,10 +47,13 @@ Register page html, less and page logic files
 - ../angular-frontend/src/app/services  
 Articles logic services for CRUD operations, pagination, material snack bar...
 
-angular-frontend/src/app/app.component.html,  
-angular-frontend/src/app/app.component.less,  
-angular-frontend/src/app/app.component.ts,  
-angular-frontend/src/app/app.module.ts,  
-angular-frontend/src/index.html,  
-angular-frontend/src/styles.less,  
-are self-explanatory files
+Other files:  
+
+../angular-frontend/src/app/app.component.html,  
+../angular-frontend/src/app/app.component.less,  
+../angular-frontend/src/app/app.component.ts,  
+../angular-frontend/src/app/app.module.ts,  
+../angular-frontend/src/index.html,  
+../angular-frontend/src/styles.less,  
+
+are pretty much self-explanatory files

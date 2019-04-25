@@ -114,13 +114,13 @@ This downfalls will be sorted out eventually.
 
 ### System Info
 
-**Developed on:**  
+Developed on:  
 
 Kubuntu 18.04.2  
 node v10.15.3  
 npm 6.4.1
 
-**Tested on:**  
+Tested on:  
 
 Kubuntu 18.04.2 live ISO image  
 node v8.10.0  
