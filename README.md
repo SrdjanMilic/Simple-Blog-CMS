@@ -59,7 +59,7 @@ This will start node server on port 3000.
 
 alternatively: ng serve --open (starts angular server and open tab in browser)
 
-## General notes
+### General notes
 
 **Please pay attention on the following details:**
 
@@ -68,23 +68,23 @@ alternatively: ng serve --open (starts angular server and open tab in browser)
 - There can't be articles with same title name.
 - There is console.log output for almost every action, so you can follow the output in terminal.
 
-**There is two users already created:**
+There is two users already created:
 
-### First user
+#### First user
 
 - name: John Doe
 - email: johndoe@example.com
 - passwd: 123456789
 - id=1
 
-### Second user
+#### Second user
 
 - name: Superman
 - email: superman@example.com
 - passwd: 123456789
 - id=2
 
-## Features
+### Features
 
 - register
 - login/logout
@@ -99,7 +99,7 @@ alternatively: ng serve --open (starts angular server and open tab in browser)
 - JWT authorization
 - material design
 
-## Downfalls
+### Downfalls
 
 - there is no working pagination yet
 - there is no file up-loader for images
@@ -112,11 +112,11 @@ alternatively: ng serve --open (starts angular server and open tab in browser)
 
 This downfalls will be sorted out eventually.
 
-## System Info
+### System Info
 
 **Developed on:**  
 
-Ubuntu 18.04.2  
+Kubuntu 18.04.2  
 node v10.15.3  
 npm 6.4.1
 
