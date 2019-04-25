@@ -1,13 +1,15 @@
 {
-  "name": "angular-blog-cms",
+  "name": "angular-frontend",
   "version": "1.0.0",
-  "description": "Angular 2 Blog CMS",
+  "description": "Angular 2 Blog CMS front-end with material design UI",
+  "keywords": ["angular", "cms", "material"],
   "readme": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/srdjanrmilic/angular-blog-cms"
+    "url": "https://github.com/SrdjanMilic/simple-blog-cms/tree/master/angular-frontend"
   },
-  "license": "mit",
+  "license": "ISC",
+  "author": "Srdjan Milic",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -20,14 +22,14 @@
   "dependencies": {
     "@angular/animations": "^7.2.13",
     "@angular/cdk": "^7.3.7",
-    "@angular/common": "^7.2.13",
+    "@angular/common": "~7.2.0",
     "@angular/compiler": "^7.2.13",
-    "@angular/core": "^7.2.13",
-    "@angular/forms": "^7.2.13",
+    "@angular/core": "~7.2.0",
+    "@angular/forms": "~7.2.0",
     "@angular/material": "^7.3.7",
     "@angular/platform-browser": "^7.2.13",
     "@angular/platform-browser-dynamic": "^7.2.13",
-    "@angular/router": "^7.2.13",
+    "@angular/router": "~7.2.0",
     "@auth0/angular-jwt": "^2.1.0",
     "core-js": "^2.5.4",
     "rxjs": "^6.4.0",
@@ -36,9 +38,9 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.13.8",
-    "@angular/cli": "^7.3.8",
-    "@angular/compiler-cli": "^7.2.13",
-    "@angular/language-service": "^7.2.13",
+    "@angular/cli": "^7.2.3",
+    "@angular/compiler-cli": "^7.2.6",
+    "@angular/language-service": "~7.2.0",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
@@ -55,6 +57,6 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": ">=3.1.1 <3.3.0"
+    "typescript": "~3.2.2"
   }
 }

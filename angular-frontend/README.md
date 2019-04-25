@@ -1,27 +1,54 @@
-# Angular blog CMS
+# Simple blog CMS - Angular frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
+## DIRECTORY STRUCTURE
 
-## Development server
+../angular-frontend/src/app/auth/auth.guard.ts  
+Authentication service (guard route): You can't reach for example url "http://localhost:4200/delete" if you are not logged in.
+You will get "access denied" error.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+../angular-frontend/src/app/auth/auth.service.ts  
+Register, login and logout app logic with JWT authentication and local storage for token.
 
-## Code scaffolding
+../angular-frontend/src/app/components/access-denied  
+Access denied page html, less files
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+../angular-frontend/src/app/components/create  
+Create article page html, less and page logic
 
-## Build
+../angular-frontend/src/app/components/delete  
+Delete article page html, less and page logic files
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+../angular-frontend/src/app/components/edit-article  
+Edit article page html, less and page logic
 
-## Running unit tests
+../angular-frontend/src/app/components/home-page  
+Home page html, less files
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+../angular-frontend/src/app/components/list-articles  
+List articles page html, less
 
-## Running end-to-end tests
+../angular-frontend/src/app/components/login  
+Login page html, less and page logic files
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+../angular-frontend/src/app/components/page-not-found  
+Page not found html, less files
 
-## Further help
+../angular-frontend/src/app/components/read-one-article  
+Read one article page html files
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+../angular-frontend/src/app/components/register  
+Register page html, less and page logic files
+
+../angular-frontend/src/app/components/update  
+Register page html, less and page logic files
+
+../angular-frontend/src/app/services  
+Articles logic services for CRUD operations, pagination, material snack bar...
+
+angular-frontend/src/app/app.component.html,  
+angular-frontend/src/app/app.component.less,  
+angular-frontend/src/app/app.component.ts,  
+angular-frontend/src/app/app.module.ts,  
+angular-frontend/src/index.html,  
+angular-frontend/src/styles.less,  
+are self-explanatory files

@@ -1,13 +1,22 @@
 {
-  "name": "node-express-jwt-authentication",
+  "name": "node-server-with-auth",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node + express jwt authentication server with RESTful API",
+  "keywords": [
+    "node",
+    "server",
+    "jwt"
+  ],
+  "readme": "README.md",
   "main": "index.js",
   "scripts": {
     "start": "node ."
   },
-  "keywords": [],
-  "author": "",
+  "author": "Srdjan Milic",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SrdjanMilic/simple-blog-cms/tree/master/node-server-with-auth"
+  },
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
