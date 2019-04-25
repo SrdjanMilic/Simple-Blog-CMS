@@ -1,10 +1,10 @@
 # Simple blog CMS
 
-Blog CMS with basic features. It's build with Angular 2 for front-end, material design for UI, Node.js with express framework for server side.
+Blog CMS with basic features build with Angular 2 for front-end, material design for UI, Node.js with express framework for server side.
 
 ## Requirements and usage
 
-Node.js with npm
+Required: Node.js with npm
 
 ### Installation on OS Ubuntu based Linux distributions
 
@@ -59,7 +59,7 @@ This will start node server on port 3000.
 
 alternatively: ng serve --open (starts angular server and open tab in browser)
 
-### General notes
+## General notes
 
 **Please pay attention on the following details:**
 
@@ -70,21 +70,21 @@ alternatively: ng serve --open (starts angular server and open tab in browser)
 
 **There is two users already created:**
 
-#### First user
+### First user
 
 - name: John Doe
 - email: johndoe@example.com
 - passwd: 123456789
 - id=1
 
-#### Second user
+### Second user
 
 - name: Superman
 - email: superman@example.com
 - passwd: 123456789
 - id=2
 
-### Features
+## Features
 
 - register
 - login/logout
@@ -99,7 +99,7 @@ alternatively: ng serve --open (starts angular server and open tab in browser)
 - JWT authorization
 - material design
 
-### DOWNFALLS
+## DOWNFALLS
 
 - there is no working pagination yet
 - there is no file up-loader for images
@@ -112,7 +112,7 @@ alternatively: ng serve --open (starts angular server and open tab in browser)
 
 This downfalls will be sorted out eventually.
 
-### SYSTEM Info
+## SYSTEM Info
 
 **Developed on:**  
 
