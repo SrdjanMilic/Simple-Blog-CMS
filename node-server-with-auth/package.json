@@ -1,6 +1,6 @@
 {
   "name": "node-server-with-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node + express jwt authentication server with RESTful API",
   "keywords": [
     "node",
@@ -10,7 +10,8 @@
   "readme": "README.md",
   "main": "index.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "nodemon": "nodemon index.js"
   },
   "author": "Srdjan Milic",
   "repository": {
