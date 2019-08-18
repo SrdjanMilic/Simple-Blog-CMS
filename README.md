@@ -112,20 +112,11 @@ There is two users already created:
 
 This downfalls will be sorted out eventually.
 
-### System Info
-
-Developed on:  
-
-Kubuntu 18.04.2  
-node v10.15.3  
-npm 6.4.1
-
-Tested on:  
-
-Kubuntu 18.04.2 live ISO image  
-node v8.10.0  
-npm 3.5.2  
-
-Windows 10  
-node v8.11.3  
-npm 6.8.0
+**Highlights**
+- Angular 2
+- TypeScript
+- Material design
+- Node.js
+- Express
+- RESTful API
+- JWT authorization
