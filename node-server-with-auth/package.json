@@ -1,7 +1,7 @@
 {
   "name": "node-server-with-auth",
   "version": "1.0.1",
-  "description": "Node + express jwt authentication server with RESTful API",
+  "description": "Node/express.js server with JWT authentication ",
   "keywords": [
     "node",
     "server",

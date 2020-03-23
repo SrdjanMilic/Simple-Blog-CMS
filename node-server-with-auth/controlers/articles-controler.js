@@ -1,16 +1,17 @@
 'use strict';
 
 const express = require('express');
-const articlesRouter = express.Router();
-const sqlite3 = require('sqlite3').verbose();
-const database = new sqlite3.Database('./sqlite3.db');
+const router = express.Router();
+
+const sqlite3 = require('../db-handler.js');
+const database = new sqlite3.Database('../sqlite-database/sqlite3.db');
 
 const logger = (req, res, next) => {
   console.log(req.query);
   next();
 };
 
-articlesRouter.use(logger);
+router.use(logger);
 
 // List all articles
 const listArticles = (data, callback) => {
@@ -19,7 +20,7 @@ const listArticles = (data, callback) => {
   });
 };
 
-articlesRouter.get('/api/v1/list-articles', (req, res, next) => {
+router.get('/api/v1/list-articles', (req, res, next) => {
   listArticles(req.body.object, (err, articles) => {
     if (err) return res.status(500).send('Server error!');
     res.status(200).send({
@@ -35,7 +36,7 @@ const readArticle = (data, callback) => {
   });
 };
 
-articlesRouter.get('/api/v1/list-articles/:id', (req, res) => {
+router.get('/api/v1/list-articles/:id', (req, res) => {
   readArticle(req.params.id, (err, article) => {
     if (err) return res.status(500).send('Server error!');
     if (article == '') return res.status(404).send('Article not found!');
@@ -52,7 +53,7 @@ const findUserArticles = (data, callback) => {
   });
 };
 
-articlesRouter.get('/api/v1/user-articles/:user_id', (req, res) => {
+router.get('/api/v1/user-articles/:user_id', (req, res) => {
   findUserArticles(req.params.user_id, (err, userId) => {
     if (err) return res.status(500).send('Server error!');
     if (userId == '') return res.status(404).send('User not found!');
@@ -69,7 +70,7 @@ const createArticle = (article, callback) => {
   });
 };
 
-articlesRouter.post('/api/v1/create-article', (req, res) => {
+router.post('/api/v1/create-article', (req, res) => {
   const title = req.body.title;
   const content = req.body.content;
   const userId = req.body.user_id;
@@ -79,7 +80,7 @@ articlesRouter.post('/api/v1/create-article', (req, res) => {
     res.status(200).send({
       'title': title,
       'content': content,
-      'userId': userId
+      'user_id': userId
     });
   });
 });
@@ -91,7 +92,7 @@ const updateArticle = (update, callback) => {
   });
 };
 
-articlesRouter.put('/api/v1/update-article', (req, res) => {
+router.put('/api/v1/update-article', (req, res) => {
   const title = req.body.title;
   const content = req.body.content;
   const id = req.body.id;
@@ -113,15 +114,15 @@ const deleteArticle = (id, callback) => {
   });
 };
 
-articlesRouter.delete('/api/v1/list-articles/:id', (req, res) => {
+router.delete('/api/v1/delete-article/:id', (req, res) => {
   const articleId = req.params.id;
 
   deleteArticle(articleId, (err) => {
     if (err) return res.status(400).send('Bad request! Check article id.\n');
     res.status(200).send({
-      'articleId': articleId
+      'article_id': articleId
     });
   });
 });
 
-module.exports = articlesRouter;
+module.exports = router;
