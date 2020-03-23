@@ -1,7 +1,6 @@
 .directory
-angular-frontend/node_modules
-angular-frontend/notes.txt
 angular-frontend/.directory
-node-server-with-auth/node_modules
-node-server-with-auth/notes.txt
+angular-frontend/node_modules
 node-server-with-auth/.directory
+node-server-with-auth/node_modules
+sqlite3.db

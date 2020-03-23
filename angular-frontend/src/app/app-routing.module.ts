@@ -26,12 +26,12 @@ const routes: Routes = [
         component: ListArticlesComponent
       },
       {
-        path: 'read-one-article/:id',
+        path:':id',
         children: [
           {
             path: '',
             component: ReadOneArticleComponent
-          },
+          }
         ]
       },
     ]
@@ -92,4 +92,5 @@ const routes: Routes = [
 
   providers: []
 })
+
 export class AppRoutingModule { }

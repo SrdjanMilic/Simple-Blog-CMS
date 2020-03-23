@@ -47,14 +47,14 @@ export class ArticleService {
   }
 
   readArticle(id: number) {
-    return this.httpClient.get(`${this.AUTH_SERVER}/api/v1/read-article/${id}`).subscribe((res: any[]) => {
+    return this.httpClient.get(`${this.AUTH_SERVER}/api/v1/list-articles/${id}`).subscribe((res: any[]) => {
       this.dataSource = res;
       console.log(res);
     });
   }
 
   deleteArticle(id: number) {
-    return this.httpClient.delete(`${this.AUTH_SERVER}/api/v1/delete-article/${id}`).subscribe((res: any[]) => {
+    return this.httpClient.delete(`${this.AUTH_SERVER}/api/v1/list-articles/${id}`).subscribe((res: any[]) => {
       this.listArticles();
       this.snackBar.open('Article deleted!', '', {
         duration: 2000
