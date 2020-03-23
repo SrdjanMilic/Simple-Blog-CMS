@@ -136,5 +136,8 @@
       }
     }
   },
-  "defaultProject": "angular-blog-cms"
+  "defaultProject": "angular-blog-cms",
+  "cli": {
+    "analytics": false
+  }
 }
