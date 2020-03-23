@@ -3,7 +3,7 @@
 const express = require('express');
 const router = express.Router();
 
-const sqlite3 = require('../db-handler.js');
+const sqlite3 = require('sqlite3').verbose();
 const database = new sqlite3.Database('../sqlite-database/sqlite3.db');
 
 const logger = (req, res, next) => {
