@@ -1,6 +1,5 @@
-.directory
-angular-frontend/.directory
-angular-frontend/node_modules
-node-server-with-auth/.directory
-node-server-with-auth/node_modules
-sqlite3.db
+angular-frontend/dist
+**node_modules
+**.vscode
+
+
