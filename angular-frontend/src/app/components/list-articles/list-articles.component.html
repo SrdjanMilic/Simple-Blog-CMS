@@ -1,9 +1,15 @@
 <div class="list-articles">
-  <mat-list role="list" *ngFor="let article of articleService.dataSource.articles">
+  <mat-list
+    role="list"
+    *ngFor="let article of articleService.dataSource.articles"
+  >
     <mat-list-item role="listitem">
       <div class="article-title">
-        <a [routerLink]="['./', article.id]" (click)="this.articleService.readArticle(article.id)">
-          <h3>{{article.title}}</h3>
+        <a
+          [routerLink]="['./', article.id]"
+          (click)="this.articleService.readArticle(article.id)"
+        >
+          <h3 #title>{{ article.title }}</h3>
         </a>
         <span class="article-user-id">user: {{ article.user_id }}</span>
       </div>
@@ -13,10 +19,23 @@
         {{ article.content }}
       </p>
     </mat-list-item>
-    <button mat-flat-button color="primary" routerLink="/list-articles/{{article.id}}" (click)="this.articleService.readArticle(article.id)">Read article</button>
+    <button
+      mat-flat-button
+      color="primary"
+      routerLink="/list-articles/{{ article.id }}"
+      (click)="this.articleService.readArticle(article.id)"
+    >
+      Read article
+    </button>
     <mat-divider></mat-divider>
   </mat-list>
 
-  <mat-paginator #paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" [length]="" showFirstLastButtons></mat-paginator>
-
+  <mat-paginator
+    #paginator
+    [pageSize]="5"
+    [pageSizeOptions]="[5, 10, 20]"
+    [length]=""
+    showFirstLastButtons
+  >
+  </mat-paginator>
 </div>
