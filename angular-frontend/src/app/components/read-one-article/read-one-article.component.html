@@ -1,7 +1,7 @@
 <div class="read-one-article">
   <mat-list
     role="list"
-    *ngFor="let article of articleService.dataSource.article; trackBy: trackArticle"
+    *ngFor="let article of articleService.dataSource.article"
   >
     <mat-list-item role="listitem">
       <h3>{{ article.id }}</h3>
