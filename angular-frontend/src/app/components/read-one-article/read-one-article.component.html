@@ -1,13 +1,19 @@
 <div class="read-one-article">
-  <mat-list role="list" *ngFor="let article of articleService.dataSource.articles">
+  <mat-list
+    role="list"
+    *ngFor="let article of articleService.dataSource.article; trackBy: trackArticle"
+  >
+    <mat-list-item role="listitem">
+      <h3>{{ article.id }}</h3>
+    </mat-list-item>
     <mat-list-item role="listitem">
       <div class="article-title">
-        <h3>{{article.title}}</h3>
-        <span class="article-user-id">user: {{article.user_id}}</span>
+        <h3>{{ article.title }}</h3>
+        <span class="article-user-id">user: {{ article.user_id }}</span>
       </div>
     </mat-list-item>
     <mat-list-item role="listitem">
-      {{article.content}}
+      {{ article.content }}
     </mat-list-item>
     <mat-divider></mat-divider>
   </mat-list>
