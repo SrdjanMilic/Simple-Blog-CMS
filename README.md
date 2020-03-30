@@ -1,20 +1,10 @@
 # Simple blog CMS
 
-Blog CMS with basic features build with Angular 2 for front-end, material design for UI, Node.js with express framework for server side.
+Very simple blog CMS with basic features build with Angular 2 for front-end, material design for UI, Node.js with express framework for server side.
 
 ## Requirements and usage
 
-Required: Node.js with npm
-
-### Installation on OS Ubuntu based Linux distributions
-
-- sudo apt install curl
-- curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
-- sudo apt-get install -y nodejs
-
-This will install node.js v10.15.3 with npm v6.4.1
-
-Alternatively, you could do "sudo apt install nodejs" for older version from default repository.
+Required: Nodejs with npm
 
 #### Linux Node server back-end initialization
 
@@ -36,10 +26,6 @@ cd ../angular-frontend
 alternatively:
 
 - ng serve --open (starts angular server and open tab in browser)
-
-### Installation on OS Windows 10
-
-Download and install Node.js with npm from: https://nodejs.org/en/download/
 
 #### Windows Node server back-end initialization
 
@@ -67,22 +53,6 @@ alternatively: ng serve --open (starts angular server and open tab in browser)
 - Article table has the FOREIGN KEY to reference the users table (relation).
 - There can't be articles with same title name.
 - There is console.log output for almost every action, so you can follow the output in terminal.
-
-There is two users already created:
-
-#### First user
-
-- name: John Doe
-- email: johndoe@example.com
-- passwd: 123456789
-- id=1
-
-#### Second user
-
-- name: Superman
-- email: superman@example.com
-- passwd: 123456789
-- id=2
 
 ### Features
 
@@ -112,7 +82,7 @@ There is two users already created:
 
 This downfalls will be sorted out eventually.
 
-**Highlights**
+**Tech stack**
 - Angular 2
 - TypeScript
 - Material design
