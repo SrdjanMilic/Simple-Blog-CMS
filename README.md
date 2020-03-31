@@ -1,6 +1,6 @@
 # Simple blog CMS
 
-Very simple blog CMS with basic features build with Angular 2 for front-end, material design for UI, Node.js with express framework for server side.
+Very simple blog CMS with basic features build with Angular 2, material design, Node.js with express for server side.
 
 ## Requirements and usage
 
