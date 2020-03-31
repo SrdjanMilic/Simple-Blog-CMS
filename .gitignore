@@ -1,4 +1,4 @@
 angular-frontend/dist
 **node_modules
 **.vscode
-sqlite-database/sqlite3.db
+sqlite-database/*
