@@ -10,7 +10,7 @@ Required: Nodejs with npm
 
 cd ../node-server-with-auth
 
-- npm update
+- npm i
 - npm start
 
 This will start node server on port 3000.
@@ -19,7 +19,7 @@ This will start node server on port 3000.
 
 cd ../angular-frontend
 
-- npm update
+- npm i
 - ng serve
 - open your browser on http://localhost:4200/
 
