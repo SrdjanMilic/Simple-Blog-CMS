@@ -6,7 +6,7 @@ Very simple blog CMS with basic features build with Angular 2 for front-end, mat
 
 Required: Nodejs with npm
 
-#### Linux Node server back-end initialization
+#### Node server back-end initialization
 
 cd ../node-server-with-auth
 
@@ -15,7 +15,7 @@ cd ../node-server-with-auth
 
 This will start node server on port 3000.
 
-#### Linux Angular front-end initialization
+#### Angular front-end initialization
 
 cd ../angular-frontend
 
@@ -26,24 +26,6 @@ cd ../angular-frontend
 alternatively:
 
 - ng serve --open (starts angular server and open tab in browser)
-
-#### Windows Node server back-end initialization
-
-cd ..\node-server-with-auth
-
-- npm update
-- npm start
-
-This will start node server on port 3000.
-
-#### Windows Angular front-end initialization
-
-- cd ..\angular-frontend
-- npm update
-- ng serve (take some time on Windows to start the compiler)
-- open your browser on http://localhost:4200/
-
-alternatively: ng serve --open (starts angular server and open tab in browser)
 
 ### General notes
 
@@ -82,7 +64,7 @@ alternatively: ng serve --open (starts angular server and open tab in browser)
 
 This downfalls will be sorted out eventually.
 
-**Tech stack**
+### Tech stack
 - Angular 2
 - TypeScript
 - Material design
