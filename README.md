@@ -1,10 +1,10 @@
 # Simple blog CMS
 
 Very simple blog CMS with basic features build with Angular 2, material design and Node.js/express for server side functionality.  
-http://188.166.11.99/simple-blog-cms/angular-frontend/dist/angular-blog-cms  
 
+http://188.166.11.99/simple-blog-cms/angular-frontend/dist/angular-blog-cms  
 ### Login credentials
-johndoe@email.com
+johndoe@email.com  
 123456789
 
 ### Requirements and usage
