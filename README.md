@@ -1,17 +1,10 @@
 # Simple Blog CMS
+Angular blog platform in a form of CMS, very easy to use and simple to implement.  
 
-Very simple blog CMS with basic features build with Angular 2, material design and Node.js/express for server side functionality.  
-
-### Login credentials
-johndoe@email.com  
-123456789
-
-### Requirements and usage
-
+## Requirements
 Required: Nodejs with npm
 
-#### Node server back-end initialization
-
+## Back-end initialization
 cd ../node-server-with-auth
 
 - npm i
@@ -19,8 +12,7 @@ cd ../node-server-with-auth
 
 This will start node server on port 3000.
 
-#### Angular front-end initialization
-
+## Front-end initialization
 cd ../angular-frontend
 
 - npm i
@@ -31,17 +23,12 @@ alternatively:
 
 - ng serve --open (starts angular server and open tab in browser)
 
-### General notes
-
-**Please pay attention on the following details:**
-
+## General notes
 - There can't be users with same email address.
-- Article table has the FOREIGN KEY to reference the users table (relation).
 - There can't be articles with same title name.
 - There is console.log output for almost every action, so you can follow the output in terminal.
 
-### Features
-
+## Features
 - register
 - login/logout
 - list all articles
@@ -53,10 +40,8 @@ alternatively:
 - form input checking and validation
 - guarded routes
 - JWT authorization
-- material design
 
-### This will be implemented and fixed
-
+## Waithing to be implemented and fixed
 - there is no working pagination yet
 - there is no file up-loader for images
 - there is no editor formating options
@@ -66,7 +51,7 @@ alternatively:
 - unsuccessful login lack the UI alert
 - edit article page doesn't show current articles
 
-### Tech stack
+## Tech stack
 - Angular 2
 - TypeScript
 - Material design
@@ -74,3 +59,7 @@ alternatively:
 - Express
 - RESTful API
 - JWT authorization
+
+## Login credentials for the app
+johndoe@email.com  
+123456789
