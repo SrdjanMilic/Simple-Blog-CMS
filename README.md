@@ -55,7 +55,7 @@ alternatively:
 - JWT authorization
 - material design
 
-### Downfalls
+### This will be implemented and fixed
 
 - there is no working pagination yet
 - there is no file up-loader for images
@@ -65,8 +65,6 @@ alternatively:
 - there is no search articles options (should be handled by pagination)
 - unsuccessful login lack the UI alert
 - edit article page doesn't show current articles
-
-This downfalls will be sorted out eventually.
 
 ### Tech stack
 - Angular 2
