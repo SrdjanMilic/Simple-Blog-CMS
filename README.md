@@ -41,7 +41,7 @@ alternatively:
 - guarded routes
 - JWT authorization
 
-## Waithing to be implemented and fixed
+## Waiting to be sorted out and fixed
 - there is no working pagination yet
 - there is no file up-loader for images
 - there is no editor formating options
@@ -50,6 +50,7 @@ alternatively:
 - there is no search articles options (should be handled by pagination)
 - unsuccessful login lack the UI alert
 - edit article page doesn't show current articles
+- ...
 
 ## Tech stack
 - Angular 2
