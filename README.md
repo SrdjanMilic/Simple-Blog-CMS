@@ -58,7 +58,6 @@ alternatively:
 - Material design
 - Node.js
 - Express
-- RESTful API
 - JWT authorization
 
 ## Login credentials for the app
